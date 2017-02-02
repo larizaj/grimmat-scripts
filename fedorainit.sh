@@ -7,6 +7,7 @@ dnf groupinstall "Sonido y vídeo" -y
 dnf groupinstall "Suite de Diseño" -y
 dnf groupinstall "Herramientas de desarrollo" -y
 
+dnf install csh
 dnf install texlive* -y
 dnf install texstudio -y
 dnf install lyx -y
