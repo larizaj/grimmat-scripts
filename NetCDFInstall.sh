@@ -15,12 +15,12 @@ tar -xvf netcdf-4.4.1.1.tar.gz
 
 rm netcdf-4.4.1.1.tar.gz 
 cd netcdf-4.4.1.1/
-mkdir home/${USER}/opt/
+mkdir &home/${USER}/opt/
 
-mkdir home/${USER}/opt/netcdf
-mkdir home/${USER}/opt/netcdf/4.4.1.1
+mkdir /home/${USER}/opt/netcdf
+mkdir /home/${USER}/opt/netcdf/4.4.1.1
 
-./configure --prefix=home/${USER}/opt/netcdf/4.4.1.1 
+./configure --prefix=/home/${USER}/opt/netcdf/4.4.1.1 
 
 make
 
