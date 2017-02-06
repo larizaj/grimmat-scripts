@@ -80,7 +80,7 @@ cd ${HOME}
 
 # ------------------------------------------------------------------------------
 # Installing Equinox
-cd $HOME
+cd ${HOME}
 git clone https://github.com/nick8325/equinox.git
 cd equinox/
 ./configure
@@ -126,17 +126,19 @@ make install-bin
 
 cd ${HOME}/apia
 cp tools/tptp4X ${HOME}/bin/
-cd $HOME
+cd ${HOME}
 
 # ------------------------------------------------------------------------------
 # Installing TPTP Library
-cd $HOME
+cd ${HOME}
 wget http://www.cs.miami.edu/~tptp/TPTP/Distribution/TPTP-v6.4.0.tgz
 tar -xzf TPTP-v6.4.0.tgz
-cd $HOME
+cd ${HOME}
 
 # ------------------------------------------------------------------------------
 # Cleaning all stuffs
+
+cd ${HOME}
 rm -r *.zip
 rm -r *.tgz
 rm -r *.gz
