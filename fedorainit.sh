@@ -1,5 +1,5 @@
 dnf update -y
-dnf groupinstall "Laboratorio Electrónico" -y
+dnf groupinstall "Escritorio Cinnamon" -y
 dnf groupinstall "Ingeniería y ciencia" -y
 dnf groupinstall "Herramientas y Librerías de Desarrollo C" -y
 dnf groupinstall "Fedora Eclipse" -y
@@ -7,7 +7,7 @@ dnf groupinstall "Sonido y vídeo" -y
 dnf groupinstall "Suite de Diseño" -y
 dnf groupinstall "Herramientas de desarrollo" -y
 
-dnf install csh
+dnf install csh -y
 dnf install texlive* -y
 dnf install texstudio -y
 dnf install lyx -y
