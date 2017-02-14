@@ -19,4 +19,10 @@ dnf copr enable nalimilan/julia -y
 dnf install julia -y
 dnf upgrade julia -y
 
+sudo dnf install git-all -y
+sudo dnf install python* -y
+sudo dnf install R -y
+sudo pip install jupyter
+sudo dnf install scala -y
+
 dnf update -y
