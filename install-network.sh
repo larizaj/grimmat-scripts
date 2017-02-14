@@ -1,13 +1,4 @@
 sudo dnf update -y
-sudo dnf install git-all -y
-sudo dnf install python* -y
-sudo dnf install R -y
-sudo pip install jupyter
-sudo dnf install scala -y
-
-
-
-
 
 # Instalando Gephi
 
@@ -31,8 +22,6 @@ echo "Icon=/home/"${USER}"/gephi-0.9.1/logo_about_2.png" >> Gephi.desktop
 
 chmod +x Gephi.desktop
 mv Gephi.desktop /home/${USER}/Escritorio
-
-
 
 # Instalando Spark 
 cd ..
