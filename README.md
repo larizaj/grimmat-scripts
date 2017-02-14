@@ -7,7 +7,7 @@ This is a compendium of bash scripts to install software on Fedora 23/24.
 ```bash
 $ cd $HOME
 $ git clone http://github.com/jonaprieto/grimmat-scripts.git
-$ sudo chmod -r u+rx ${HOME}/grimmat-scripts
+$ cd grimmat-scripts
 ``` 
 
 ### Scripts
@@ -33,4 +33,4 @@ That's it. Just wait to finish the installation and all it's done!
 
 ### Contributors
 
-Everyone is wellcome, just specify the piece of software is intedend for installing and make a Pull Request. 
+Just specify the piece of software is intended for installing and make your PR (pull request). 
