@@ -8,10 +8,6 @@ dnf groupinstall "Suite de Diseño" -y
 dnf groupinstall "Herramientas de desarrollo" -y
 
 dnf install csh -y
-dnf install texlive* -y
-dnf install texstudio -y
-dnf install lyx -y
-dnf install kile -y
 dnf install spyder -y
 dnf install R -y
 dnf install https://download1.rstudio.org/rstudio-1.0.44-x86_64.rpm -y
