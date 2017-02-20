@@ -6,6 +6,8 @@ dnf groupinstall "Fedora Eclipse" -y
 dnf groupinstall "Sonido y vídeo" -y
 dnf groupinstall "Suite de Diseño" -y
 dnf groupinstall "Herramientas de desarrollo" -y
+dnf install xterm -y
+dnf install cmake -y
 
 dnf install csh -y
 dnf install spyder -y
