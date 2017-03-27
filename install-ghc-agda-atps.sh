@@ -6,27 +6,30 @@ mkdir bin
 
 #-------------------------------------------------------------------------------
 # Haskell support
-
+sudo -i
 yes | dnf remove ghc-base
 yes | dnf copr enable petersen/ghc-8.0.2
-dnf install ghc
+dnf install ghc -y
 
 ghc --version
 cabal --version
-
+exit()
 export PATH=${HOME}/bin:${HOME}/.cabal/bin:${PATH}
 cabal install cabal-install
+cabal install alex
+cabal install alex
+cabal install agda
 
 # ------------------------------------------------------------------------------
 # Prolog support : SWI-Prolog
+sudo -i
 
 dnf install \
   autoconf \
   chrpath \
   libunwind \
   freetype-devel \
-  gmp-devel \
-  java-1.8.0-openjdk-devel \
+f  java-1.8.0-openjdk-devel \
   jpackage-utils \
   libICE-devel \
   libjpeg-turbo-devel \
@@ -47,7 +50,7 @@ dnf install \
   unixODBC-devel \
   zlib-devel \
   uuid-devel \
-  libarchive-devel
+  libarchive-devel -y
 
 git clone https://github.com/SWI-Prolog/swipl-devel.git
 cd swipl-devel
