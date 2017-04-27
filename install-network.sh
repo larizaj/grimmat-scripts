@@ -48,11 +48,20 @@ cd /usr/local/apache-maven
 sudo tar -xzvf apache-maven-3.5.0-bin.tar.gz
 
 echo "export M2_HOME=/usr/local/apache-maven/apache-maven-3.5.0" >> ~/.bash_profile
+source ~/.bash_profile
 echo "export M2=$M2_HOME/bin" >> ~/.bash_profile
 echo 'export MAVEN_OPTS="-Xms256m -Xmx512m" ' >> ~/.bash_profile
+source ~/.bash_profile
 echo "export PATH=$M2:$PATH" >> ~/.bash_profile
 source ~/.bash_profile
 
+# Advanced Analytics with Spark
+cd ~
+git clone https://github.com/sryza/aas
+cd aas
+git checkout 1st-edition 
+mvn package
+mvn install -Drat.skip=true
 
 
 
