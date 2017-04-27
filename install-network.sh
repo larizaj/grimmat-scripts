@@ -39,3 +39,22 @@ tar -xf artifact.php\?name\=neo4j-community-3.1.1-unix.tar.gz
 rm artifact.php\?name\=neo4j-community-3.1.1-unix.tar.gz
 echo "export PATH=\$PATH:/home/\${USER}/neo4j-community-3.1.1/bin" >> .bashrc
 source ~/.bashrc
+
+# Instalando Maven
+wget  http://apache.uniminuto.edu/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
+sudo mkdir -p /usr/local/apache-maven
+sudo mv apache-maven-3.5.0-bin.tar.gz /usr/local/apache-maven
+cd /usr/local/apache-maven
+sudo tar -xzvf apache-maven-3.5.0-bin.tar.gz
+
+echo "export M2_HOME=/usr/local/apache-maven/apache-maven-3.5.0" >> ~/.bash_profile
+echo "export M2=$M2_HOME/bin" >> ~/.bash_profile
+echo 'export MAVEN_OPTS="-Xms256m -Xmx512m" ' >> ~/.bash_profile
+echo "export PATH=$M2:$PATH" >> ~/.bash_profile
+source ~/.bash_profile
+
+
+
+
+
+
