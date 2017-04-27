@@ -60,7 +60,7 @@ cd ~
 git clone https://github.com/sryza/aas
 cd aas
 git checkout 1st-edition 
-mvn package
+mvn clean package
 mvn install -Drat.skip=true
 
 
