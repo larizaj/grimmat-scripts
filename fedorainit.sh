@@ -23,4 +23,6 @@ sudo dnf install R -y
 sudo pip install jupyter
 sudo dnf install scala -y
 
+sudo dnf install xclip -y
+
 dnf update -y
